@@ -1,39 +1,348 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accesorios</title>
 
-<style>
+    <style>
+        #barra_1 {
 
-</style>
+            justify-content: center;
+            display: flex;
+            background-color: black;
+        }
 
 
+        #barra_2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(209, 209, 209);
+        }
+
+        .acciones {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        #barra_3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .acciones_separacion {
+            margin: 8px;
+        }
+
+        #buscador {
+
+            border: none;
+            background-color: rgb(209, 209, 209);
+            border-radius: 20px;
+            padding: 15px;
 
 
+        }
+
+        #barra_2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(209, 209, 209);
+        }
+
+
+        .acciones {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        #barra_3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .acciones_separacion {
+            margin: 8px;
+        }
+
+        #buscador {
+
+            border: none;
+            background-color: rgb(209, 209, 209);
+            border-radius: 20px;
+            padding: 15px;
+
+
+        }
+
+        #capa_1 {
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #capa_2 {
+            display: flex;
+        }
+
+        .separacion {
+
+            margin: 8px;
+        }
+
+        .whidth {
+            width: 560px;
+        }
+    </style>
 
 </head>
-<body>
-    
-<main>
-    
-    <div>
-        <p><b>87 Productos</b></p> 
-    </div>
-    <div>
-        <div>
-            <p><b>Ocultar Filtros</b></p>
+
+<body style="background-color: white;">
+    <header>
+        <div id="barra_1">
+            <p style="color: white;"><b>6 cuotas sin interes en todos los sitios</b></p>
         </div>
-        <div> 
-            <img src="filtro.svg" alt="">
+        <div id="barra_2">
+            <div style="margin-left: 50px;"><img src="jordan.svg" alt="jor" width="40px"></div>
+            <div class="acciones">
+                <div class="acciones_separacion">
+                    <p><b>Suscribite</b></p>
+                </div>
+                <div class="acciones_separacion">
+                    <p><b>|</b></p>
+                </div>
+                <div class="acciones_separacion">
+                    <p><b>Buscar tienda</b></p>
+                </div>
+                <div class="acciones_separacion">
+                    <p><b>|</b></p>
+                </div>
+                <div class="acciones_separacion">
+                    <p><b>Eventos</b></p>
+                </div>
+                <div class="acciones_separacion">
+                    <p><b>|</b></p>
+                </div>
+                <div class="acciones_separacion">
+                    <p><b>Ayuda</b></p>
+                </div>
+            </div>
         </div>
-    </div>    
-</main>
+        <div id="barra_3">
+            <div style="margin-left: 50px;"><img src="nikeeeee.svg" alt="nik" width="90px"></div>
+            <div class="acciones">
+                <div class="acciones_separacion">
+                    <p><b>Destacados</b></p>
+                </div>
+                <div class="acciones_separacion">
+                    <p><b>Hombre</b></p>
+                </div>
+                <div class="acciones_separacion">
+                    <p><b>Mujer</b></p>
+                </div>
+                <div class="acciones_separacion">
+                    <p><b>Niño/a</b></p>
+                </div>
+                <div class="acciones_separacion">
+                    <p><b>Accesorios</b></p>
+                </div>
+                <div class="acciones_separacion">
+                    <p><b>Oportunidades</b></p>
+                </div>
+            </div>
+            <div class="acciones">
+                <div style="margin: 10px;"><input id="buscador" type="text" placeholder="Buscar"></div>
+                <div style="margin: 10px;"><img src="bolsa 2.png" alt="bol2" width="50px"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="capa_1">
+            <div>
+                <p><b>87 Productos</b></p>
+            </div>
+            <div style="display: flex; align-items: center;">
+                <div class="separacion">
+                    <p><b>Ocultar Filtros</b></p>
+                </div>
+                <div class="separacion">
+                    <img src="filtro.svg" alt="fil" width="25px">
+                </div>
+                <div class="separacion">
+                    <p><b>ordenar por mas recientes</b></p>
+                </div>
+                <div class="separacion">
+                    <img src="flechita.png" alt="fle" width="10px">
+                </div>
+            </div>
+        </div>
+        <div id="capa_2">
+            <div style="margin: 50px;">
+                <div>
+                    <div class="width">
+                        <img src="pelotiña.webp" alt="pel" width="500px">
+                    </div>
+                    <div>
+                        <p style="color: red;"><b>lo nuevo</b></p>
+                        <p><b>Premier League Flight</b></p>
+                        <p style="color: rgb(182, 182, 182);"><b>Pelota de Futbol Unisex</b></p>
+                        <p><b>$ 239.999</b></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="width">
+                        <img src="mochila.webp" alt="moc" width="500px">
+                    </div>
+                    <div>
+                        <p style="color: red;"><b>lo nuevo</b></p>
+                        <p><b>Mochila de Futbol Unisex</b></p>
+                        <p style="color: rgb(182, 182, 182);"><b> Unisex</b></p>
+                        <p><b>$ 99.999</b></p>
+                    </div>
+                </div>
+            </div>
+            <div style="margin: 50px;">
+                <div>
+                    <div class="width">
+                        <img src="club.webp" alt="pel" width="500px">
+                    </div>
+                    <div>
+                        <p style="color: red;"><b>lo nuevo</b></p>
+                        <p><b>Nike Club Elite</b></p>
+                        <p style="color: rgb(182, 182, 182);"><b>Mochila de Futbol Unisex</b></p>
+                        <p><b>$ 99.999</b></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="width">
+                        <img src="guantes.webp" alt="pel" width="500px">
+                    </div>
+                    <div>
+                        <p style="color: red;"><b>lo nuevo</b></p>
+                        <p><b>Nike Macht</b></p>
+                        <p style="color: rgb(182, 182, 182);"><b>Guantes de Futbol Unisex</b></p>
+                        <p><b>$ 69.999</b></p>
+                    </div>
+                </div>
+            </div>
+            <div style="margin: 50px;">
+                <div>
+                    <div class="width">
+                        <img src="pelotita.webp" alt="pel" width="500px">
+                    </div>
+                    <div>
+                        <p style="color: red;"><b>lo nuevo</b></p>
+                        <p><b>Nike Academy</b></p>
+                        <p style="color: rgb(182, 182, 182);"><b>Pelota de Futbol Unisex</b></p>
+                        <p><b>$ 69.999</b></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="width">
+                        <img src="maestro.webp" alt="pel" width="500px">
+                    </div>
+                    <div>
+                        <p style="color: red;"><b>lo nuevo</b></p>
+                        <p><b>Nike maestro</b></p>
+                        <p style="color: rgb(182, 182, 182);"><b>Pelota de Futsal Unisex</b></p>
+                        <p><b>$ 57.999</b></p>
+                    </div>
+                </div>
+            </div>
 
-
-
-
-
+        </div>
+    </main>
 </body>
+
+<footer>
+    <div >
+        <div>
+            <div ><p><a  href="https://www.nike.com.ar/locales"><b>BUSCAR TIENDA</b></a></p></div>
+            <div ><p><a  href="https://www.nike.com.ar/actualizacion-de-datos"><b>SUMATE A LA COMUNIDAD</b></a></p></div>
+            <div ><p><a  href="https://www.nike.com.ar/help/nota/como-sigo-mi-pedido"><b>SEGUÍ TU PEDIDO</b></a></p></div>
+        </div>
+        <div style="margin-top: 35px;">
+            <div><p class="titulos_footer"><b>AYUDA</b></p></div>
+            <div ><a  href="">Envíos y entregas</a></div>
+            <div ><a  href="">Devoluciones</a></div>
+            <div ><a  href="">Cambios</a></div>
+            <div ><a  href="">Autogestionar mi devolución</a></div>
+            <div ><a  href="">Opciones de pago</a></div>
+            <div ><a  href="">Contactate</a></div>
+            <div ><a  href="">Defensa al consumidor</a></div>
+            <div ><a  href="">Libro de quejas online</a></div>
+            <div><p ><b>Botón de arrepentimiento</b></p></div>
+            <div ><a href="">Ver todos</a></div>
+        </div>
+        <div >
+            <div ><a href=""><b>ACERCA DE NIKE</b></a></div>
+            <div ><a  href="">Propósito</a></div>
+            <div ><a  href="">Noticias</a></div>
+        </div>
+        <div >
+            <div ><a  href=""><b>NOVEDADES NIKE</b></a></div>
+            <div ><a  href="">Encontrá tu calzado</a></div>
+            <div ><a  href="">¿Como elegir tu top?</a></div>
+            <div ><a  href="">Tips saludables</a></div>
+            <div ><a  href="">Promociones</a></div>
+        </div>
+        <div >
+            <a href=""><img src="/assets/data.webp" alt="Data Fiscal" width="30px"></a>
+        </div>
+        <div >
+            <div >
+                <a href=""><img src="assets/x2.webp" alt="X" width="35px"></a>
+            </div>
+            <div >
+                <a href=""><img src="assets/f.png" alt="F" width="35px"></a>
+            </div>
+            <div >
+                <a href=""><img src="assets/y.png" alt="Y" width="35px"></a>
+            </div>
+            <div >
+                <a href=""><img src="assets/i.png" alt="I" width="35px"></a>
+            </div>
+        </div>
+    </div>
+    <div >
+        <div >
+            <div >
+                <div>
+                    <a href="https://www.nike.com/?geoselection=true"><img src="assets/ubi.png" alt="imagen de ubicación" width="15px"></a>
+                </div>
+                <div>
+                    <a  href="https://www.nike.com/?geoselection=true">Argentina</a>
+                </div>
+            </div>
+            <div >
+                <p> </p>
+            </div>
+        </div>
+        <div >
+            <div>
+                <a href="https://www.nike.com.ar/terminos-y-condiciones-hot-sale">Hot Sale</a>
+            </div>
+            <div>
+                <a href="https://www.nike.com.ar/terminos-y-condiciones">Términos y Condiciones</a>
+            </div>
+            <div>
+                <a href="https://www.nike.com.ar/politica-privacidad">Política de privacidad y cookies</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
 </html>
