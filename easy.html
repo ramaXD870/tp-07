@@ -1,66 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        #producto {
 
-#producto {
+            border: solid;
+            border-radius: 10px;
+            padding: 16px;
+            width: 240px;
+            position: relative;
+        }
 
-    border: solid;
-    border-radius: 10px;
-    padding: 16px;
-    width: 240px;
-    position: relative;
-}
-#favoritos{
-    position: absolute;
-    top: 10px;
-    right: 20px;
-}
-#elemento {
-    display: flex;
-    justify-content: center;
-    border-bottom: solid;
-    margin-top: 50px;
-    padding-bottom: 40px;
-}
-#nombre-del-producto {
-    color: #554b47;
-}
-#oferta{
-    color: white;
-    background-color: #0097ff;
-    border-radius: 7px;
-    padding: 5px;
-}
-#compra {
-    display: flex;
-    justify-content: center;
-    background-color: #f9bb10;
-    padding-top: 10px ;
-    padding-bottom: 10px;
-    border-radius: 7px;
-}
-#compra2 {
-    text-decoration: none;
-    color: #473d38;
-}
-#cuotas {
-    position: absolute;
-    top: 165px;
-    right: 200px;
-}
+        #favoritos {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
 
+        #elemento {
+            display: flex;
+            justify-content: center;
+            border-bottom: solid;
+            margin-top: 50px;
+            padding-bottom: 40px;
+        }
 
+        #nombre-del-producto {
+            color: #554b47;
+        }
 
+        #oferta {
+            color: white;
+            background-color: #0097ff;
+            border-radius: 7px;
+            padding: 5px;
+        }
 
+        #compra {
+            display: flex;
+            justify-content: center;
+            background-color: #f9bb10;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 7px;
+        }
 
+        #compra2 {
+            text-decoration: none;
+            color: #473d38;
+        }
 
+        #cuotas {
+            position: absolute;
+            top: 165px;
+            right: 200px;
 
+        }
+
+        .vista-previa {
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .boton {
+            display: flex;
+            align-items: center;
+            background-color: rgb(206, 206, 206);
+            border-radius: 10px;
+        }
+        #producto:hover .vista-previa{
+            opacity: 1;
+        }
     </style>
 </head>
+
 <body>
     <main>
         <div id="producto">
@@ -70,10 +90,14 @@
             <div id="cuotas">
                 <img src="cuotas.png" alt="imagen de cuotas">
             </div>
+
             <div id="elemento">
                 <img src="termotanque.webp" alt="imagen termotanque" width="200px">
             </div>
-            <div >
+            <div class="vista-previa">
+                <button class="boton"><img src="ojo.png" alt="imagen del ojo" height="24px"><p style="color: rgb(146, 177, 187);"><b>Vista previa</b></p></button>
+            </div>
+            <div>
                 <img src="cuotas.pngs" alt="" width="169px">
             </div>
             <div>
@@ -84,7 +108,7 @@
             </div>
             <div style="display: flex; align-items: center;">
                 <div>
-                   <p id="oferta"><b>-20%</b></p>
+                    <p id="oferta"><b>-20%</b></p>
                 </div>
                 <div>
                     <p style="text-decoration: line-through;">$299.995</p>
@@ -94,9 +118,11 @@
                 <p><strong>$239.996</strong></p>
             </div>
             <div id="compra">
-                <a id="compra2" href="https://www.easy.com.ar/termotanque-senorial-electrico-65-lts/p"><b>Agregar al carrito</b></a>
+                <a id="compra2" href="https://www.easy.com.ar/termotanque-senorial-electrico-65-lts/p"><b>Agregar al
+                        carrito</b></a>
             </div>
         </div>
     </main>
 </body>
+
 </html>
